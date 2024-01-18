@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./navbar.css"
 import { Link } from 'react-router-dom'
 
 function Navbar() {
+
+  const [isUser, setIsUser] = useState(true)
+
   return (
     <div><header className='header'>
       <div><h1>
@@ -19,7 +22,14 @@ function Navbar() {
       </Link>
     </div>
     <div>
-      <button>login</button>
+      <button>
+        {isUser ? <Link to={"/profile"} >
+          Profile
+        </Link> : <Link to={"/profile"} >
+          log in
+        </Link>  }
+        
+      </button>
     </div>
 </header></div>
   )
