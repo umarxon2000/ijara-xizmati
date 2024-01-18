@@ -1,0 +1,22 @@
+.header{
+    width: 1005;
+    height: 10vh;
+    background-color: darkslategrey;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    gap:20px;
+}
+.header_links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.header_links a{
+    text-decoration: none;
+    color: slategray;
+    font-size: 30px;
+    font-weight: 500;
+}
