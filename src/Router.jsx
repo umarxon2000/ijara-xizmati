@@ -3,6 +3,8 @@ import Main from "./pages/Main"
 import About from "./pages/About"
 import Contact from "./pages/Contact"
 import {createBrowserRouter , RouterProvider} from "react-router-dom"
+import Auth from './pages/Auth'
+import Profile from './pages/Profile'
 
 function Router() {
 
@@ -19,6 +21,14 @@ function Router() {
           path: "/contact",
           element:<Contact/>,
         },
+        {
+            path: "/auth",
+            element:<Auth/>,
+          },
+          {
+            path: "/profile",
+            element:<Profile/>,
+          },
       ])
 
   return (
